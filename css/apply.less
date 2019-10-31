@@ -1,0 +1,119 @@
+//将稿件分为多少份
+@count: 25;
+// 宽
+@kuan: 375px;
+//每一份的大小
+@sharePX: @kuan / @count;
+.m_body {
+  width: 100%;
+  //内容
+  .top {
+    width: 100%;
+    height: 50rem / @sharePX;
+    background-color: #049f40;
+    padding: 18rem / @sharePX 15rem / @sharePX 15rem / @sharePX;
+    box-sizing: border-box;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18rem / @sharePX;
+    p {
+      color: #fff;
+    }
+  }
+  //   内容
+  .content-wrap {
+    width: 100%;
+    //   内容区域
+    .content {
+      width: 100%;
+      padding: 0 15rem / @sharePX;
+      box-sizing: border-box;
+      margin-bottom: 80rem/@sharePX;
+      // 科研成果
+      .introductions {
+        width: 100%;
+        color: #333333;
+        margin-top: 12rem / @sharePX;
+        div {
+          position: relative;
+          p {
+            color: #049f40;
+            font-weight: 700;
+            font-size: 16rem / @sharePX;
+            margin: 0 2rem / @sharePX 12rem / @sharePX 0;
+          }
+          .ying {
+            position: absolute;
+            top: 0rem / @sharePX;
+            left: 70rem / @sharePX;
+            div {
+              color: #cccccc;
+              font-size: 6rem / @sharePX;
+              font-weight: 700;
+            }
+          }
+        }
+        ul {
+          width: 100%;
+          li {
+            position: relative;
+            width: 100%;
+            margin-bottom: 20rem / @sharePX;
+            img {
+              width: 100%;
+            }
+            p {
+              width: 100%;
+              height: 50rem / @sharePX;
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              background-color: rgba(0, 0, 0, 0.8);
+              font-size: 12rem / @sharePX;
+              line-height: 20rem / @sharePX;
+              color: #fff;
+              display: flex;
+              align-content: center;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+  }
+  //   底部
+  .footer{
+		width: 100%;
+		padding: 10rem/@sharePX 46rem/@sharePX 8rem/@sharePX;
+		box-sizing: border-box;
+		background-color: #f8f8f8;
+		border: 1rem/@sharePX solid #b2b2b2;
+		display: flex;
+		justify-content : space-between;
+		align-items: center;
+		font-size: 13rem/@sharePX;
+		position: fixed;
+		left: 0;
+    bottom: 0;
+		div{
+			width:55rem/@sharePX;
+			height: 45rem/@sharePX;
+			text-align: center;
+			a{
+				display: block;
+				width: 38rem/@sharePX;
+				height: 25rem/@sharePX;
+				margin: 0 8.5rem/@sharePX;
+				img{
+					width: 100%;
+				}
+			}
+			p{
+				margin-top: 5rem/@sharePX;
+				text-align: center;
+			}
+		}
+	}
+}

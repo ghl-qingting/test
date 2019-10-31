@@ -1,0 +1,219 @@
+//将稿件分为多少份
+@count: 25;
+// 宽
+@kuan: 375px;
+//每一份的大小
+@sharePX: @kuan / @count;
+
+.m_body {
+  width: 100%;
+  position: relative;
+  //内容
+  .top {
+    width: 100%;
+    height: 50rem / @sharePX;
+    background-color: #049f40;
+    padding: 18rem / @sharePX 15rem / @sharePX 15rem / @sharePX;
+    box-sizing: border-box;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18rem / @sharePX;
+    p {
+      color: #fff;
+    }
+  }
+  // 轮播图
+  .swiper-container {
+      width: 100%;
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        img{
+          width: 100%;
+        }
+      }
+      .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+        width: 8rem / @sharePX;
+        height: 8rem / @sharePX;
+        border: 1rem / @sharePX solid #049f40;
+    }
+    .swiper-pagination-bullet-active{
+        background: #049f40;
+    }
+  }
+  //   内容
+  .content-wrap {
+    width: 100%;
+    //   头部
+    .head {
+      width: 100%;
+      height: 136rem / @sharePX;
+      padding: 0rem / @sharePX 49.5rem / @sharePX;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13rem / @sharePX;
+      div {
+        display: 1;
+        align-items: center;
+        align-content: center;
+        img {
+          width: 50rem / @sharePX;
+        }
+        p {
+          margin-top: 5rem / @sharePX;
+          text-align: center;
+        }
+      }
+    }
+    //   内容区域
+    .content {
+      width: 100%;
+      padding: 0 15rem / @sharePX;
+      box-sizing: border-box;
+      margin-bottom: 80rem/@sharePX;
+      // margin-bottom: 25rem / @sharePX;
+      // 公司简介
+      .introduction {
+        width: 100%;
+        color: #333333;
+        p {
+          font-size: 12rem / @sharePX;
+          line-height: 20rem / @sharePX;
+        }
+        div {
+          position: relative;
+          p {
+            color: #049f40;
+            font-weight: 700;
+            font-size: 16rem / @sharePX;
+            margin: 0 2rem / @sharePX 16rem / @sharePX 0;
+          }
+          .ying {
+            position: absolute;
+            top: 0rem / @sharePX;
+            left: 70rem / @sharePX;
+            div {
+              color: #999999;
+              font-size: 6rem / @sharePX;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+      // 我们的产品
+      .product {
+        width: 100%;
+        text-align: center;
+        margin: 20rem / @sharePX 0 8rem / @sharePX 0;
+        font-size: 12rem / @sharePX;
+        img {
+          width: 200rem / @sharePX;
+          height: 35rem / @sharePX;
+        }
+        ul {
+          width: 100%;
+          li {
+            width: 100%;
+            text-align: left;
+            margin-top: 25rem / @sharePX;
+            img {
+              width: 127rem / @sharePX;
+              height: 75rem / @sharePX;
+              float: left;
+              margin-right: 4rem / @sharePX;
+            }
+            span {
+              display: block;
+              font-size: 13rem / @sharePX;
+              font-weight: 700;
+              margin-bottom: 12rem / @sharePX;
+            }
+          }
+        }
+      }
+      // 科研成果
+      .introductions {
+        width: 100%;
+        color: #333333;
+        margin-top: 25rem / @sharePX;
+        p {
+          font-size: 12rem / @sharePX;
+          line-height: 20rem / @sharePX;
+          margin-top: 20rem / @sharePX;
+        }
+        div {
+          position: relative;
+          p {
+            color: #049f40;
+            font-weight: 700;
+            font-size: 16rem / @sharePX;
+            margin: 0 2rem / @sharePX 16rem / @sharePX 0;
+          }
+          .ying {
+            position: absolute;
+            top: 0rem / @sharePX;
+            left: 70rem / @sharePX;
+            div {
+              color: #999999;
+              font-size: 7rem / @sharePX;
+            }
+          }
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  //   底部
+  .footer {
+    width: 100%;
+    padding: 10rem / @sharePX 46rem / @sharePX 8rem / @sharePX;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    border: 1rem / @sharePX solid #b2b2b2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13rem / @sharePX;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    div {
+      width: 55rem / @sharePX;
+      height: 45rem / @sharePX;
+      text-align: center;
+      a {
+        display: block;
+        width: 38rem / @sharePX;
+        height: 25rem / @sharePX;
+        margin: 0 8.5rem / @sharePX;
+        img {
+          width: 100%;
+        }
+      }
+      p {
+        margin-top: 5rem / @sharePX;
+        text-align: center;
+      }
+    }
+  }
+}

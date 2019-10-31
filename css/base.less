@@ -1,0 +1,35 @@
+
+@fontFamily: '微软雅黑';
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	// font-size: 12px;
+	font-family: @fontFamily;
+	color: #333333;
+}
+a {
+	text-decoration: none;
+	color: #333333;
+}
+img,input {
+	padding: 0;
+	border: 0 none;
+	outline-style: none;
+	vertical-align: middle;
+}
+
+.left {
+    float: left;
+}
+.right{
+    float: right
+}
+.clearfix::after {
+	content: "";
+	height: 0;
+	line-height: 0;
+	clear: both;
+	visibility: hidden;
+	display: block;
+}
